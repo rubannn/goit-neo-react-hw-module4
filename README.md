@@ -3,7 +3,7 @@
 ---
 ```
 npm create vite@latest
-
+npm install modern-normalize react-hot-toast react-icons react-modal react-loader-spinner axios
 npm run dev
 ```
 ---

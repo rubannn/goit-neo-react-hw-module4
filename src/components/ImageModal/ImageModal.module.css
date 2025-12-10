@@ -1,0 +1,49 @@
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75vh;
+  width: fit-content;
+  max-width: 75vw;
+  height: 75vh;
+}
+
+.modal img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.likes {
+  position: absolute;
+  bottom: 0;
+  height: 32px;
+  background-color: #333333c4;
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  padding: 8px;
+  animation: Likes 200ms 100ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #33333364;
+}
+
+@keyframes Likes {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

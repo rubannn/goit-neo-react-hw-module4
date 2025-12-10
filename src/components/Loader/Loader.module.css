@@ -1,0 +1,14 @@
+.loader {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+  /* расстояние над кнопкой — можно изменить */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* animation: fadeIn 0.2s ease-out forwards;
+  opacity: 0; */
+}

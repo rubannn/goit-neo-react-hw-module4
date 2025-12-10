@@ -1,0 +1,11 @@
+.container {
+  margin: 48px 64px;
+}
+
+.loadMoreWrapper {
+  position: relative;
+  padding-bottom: 60px;
+  /* чтобы Loader не перекрывал layout */
+  display: flex;
+  justify-content: center;
+}

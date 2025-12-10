@@ -1,0 +1,12 @@
+.btn-load-more {
+  border-radius: 16px;
+  background: #ebebeb;
+  padding: 10px 64px;
+  margin: 0 auto;
+  display: block;
+  border: none;
+}
+
+.btn-load-more:hover {
+  cursor: pointer;
+}

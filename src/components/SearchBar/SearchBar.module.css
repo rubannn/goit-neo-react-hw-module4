@@ -1,0 +1,80 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 24px 0;
+  /* больше высоты поля — создаёт воздух */
+
+  background: #3a79b5;
+  /* современный нежный голубой */
+  border-bottom: 1px solid #3a79b5;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Поле ввода */
+.form input {
+  flex: 1;
+  border: none;
+  outline: none;
+
+  padding: 12px 16px;
+
+  border-radius: 999px;
+  background: #ffffff;
+
+  font-size: 18px;
+  color: #3a79b5;
+
+  transition: box-shadow 0.2s ease;
+}
+
+.form input::placeholder {
+  color: #999;
+}
+
+.form input:focus {
+  box-shadow: 0 0 0 2px #bcd8f6;
+}
+
+
+.form button {
+  width: 44px;
+  height: 44px;
+
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0;
+  color: transparent;
+  padding: 0;
+}
+
+.form button:hover {
+  cursor: pointer;
+  background: #f2f6fa;
+}
+
+.form button .icon {
+  width: 28px;
+  height: 28px;
+  color: #4a6fa5;
+}
