@@ -1,12 +1,31 @@
 .btn-load-more {
-  border-radius: 16px;
-  background: #ebebeb;
-  padding: 10px 64px;
-  margin: 0 auto;
   display: block;
+  margin: 32px auto;
+
+  padding: 14px 48px;
+
   border: none;
+  border-radius: 999px;
+
+  background: #3a79b5;
+  /* в цвет шапки */
+  color: #ffffff;
+  /* как у кнопки поиска */
+  font-size: 18px;
+  font-weight: 500;
+
+  transition: background 0.25s ease, box-shadow 0.25s ease;
 }
 
 .btn-load-more:hover {
   cursor: pointer;
+  background: #4a8ad0;
+  /* светлее при наведении */
+  box-shadow: 0 0 0 3px #bcd8f6;
+  /* как фокус у инпута */
+}
+
+.btn-load-more:active {
+  background: #316a99;
+  /* немного темнее при нажатии */
 }

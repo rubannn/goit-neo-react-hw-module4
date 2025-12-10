@@ -3,12 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: var(--header-height);
 
   padding: 24px 0;
-  /* больше высоты поля — создаёт воздух */
-
   background: #3a79b5;
-  /* современный нежный голубой */
+
   border-bottom: 1px solid #3a79b5;
 
   display: flex;
