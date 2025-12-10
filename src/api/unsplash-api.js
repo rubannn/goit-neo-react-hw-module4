@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URL = "https://api.unsplash.com/";
 const ACCESS_KEY = import.meta.env.VITE_API_KEY;
-const PER_PAGE = 25;
+const PER_PAGE = 16;
 
 const instance = axios.create({
   baseURL: BASE_URL,
