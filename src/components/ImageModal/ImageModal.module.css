@@ -29,12 +29,25 @@
   height: 32px;
   background-color: #333333c4;
   color: #fff;
-  text-align: right;
   width: 100%;
   padding: 8px;
-  animation: Likes 200ms 100ms;
+
+  display: flex;
+  justify-content: space-between;
+  /* ✨ Разносит текст влево и вправо */
+  align-items: center;
+
+  animation: Likes 200ms 100ms forwards;
   opacity: 0;
-  animation-fill-mode: forwards;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  margin-left: auto;
+  text-align: right;
 }
 
 .overlay {

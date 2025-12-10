@@ -14,7 +14,10 @@ export default function ImageModal({ image, isOpen, closeModal }) {
       overlayClassName={css.overlay}
     >
       <img src={image.urls?.regular} alt={image.description} />
-      <p className={css.likes}>Likes: {image.likes || 0}</p>
+      <p className={css.likes}>
+        <span className={css.left}>Description: {image.alt_description}</span>
+        <span className={css.right}>Likes: {image.likes || 0}</span>
+      </p>
     </Modal>
   );
 }
