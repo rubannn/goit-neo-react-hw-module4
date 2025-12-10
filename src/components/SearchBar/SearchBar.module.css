@@ -1,3 +1,7 @@
+:root {
+  --header-height: calc(24px * 2 + 48px);
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -13,7 +17,7 @@
   display: flex;
   justify-content: center;
 
-  z-index: 1000;
+  z-index: 888;
 }
 
 .form {

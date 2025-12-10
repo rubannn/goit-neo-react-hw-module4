@@ -1,3 +1,12 @@
+:root {
+  --columns: 4;
+  /* ← задаёшь количество элементов в строке */
+  --side-padding: 0;
+  /* Отступы слева и справа */
+  --gap: 16px;
+  /* Промежутки между элементами */
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -10,14 +19,19 @@
   flex-wrap: wrap;
   gap: var(--gap);
 
-  width: calc((var(--item-size) * var(--columns)) + (var(--gap) * (var(--columns) - 1)));
+  /* Общая ширина галереи с учётом боковых отступов */
+  width: calc(100% - (var(--side-padding) * 2));
 }
 
 .gallery-item {
   border-radius: 8px;
-  width: var(--item-size);
-  height: var(--item-size);
+  width: calc((100% - (var(--gap) * (var(--columns) - 1))) / var(--columns));
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+
+  /* Эффект объёма */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .gallery-item div {
@@ -26,6 +40,19 @@
   height: 100%;
 }
 
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Заполняет блок как превью на YouTube */
+}
+
 .gallery-item:hover {
   cursor: zoom-in;
+
+  /* Поднятие + увеличение */
+  transform: translateY(-2px) scale(1.02);
+
+  /* Усиленная тень */
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }

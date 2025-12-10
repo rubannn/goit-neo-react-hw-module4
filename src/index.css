@@ -1,14 +1,3 @@
-:root {
-  --columns: 4;
-  /* ← задаёшь количество элементов в строке */
-  --item-size: 280px;
-  /* размер карточки */
-  --gap: 24px;
-  /* отступ между карточками */
-  --header-height: calc(24px * 2 + 48px);
-  /* высота header */
-}
-
 body {
   font-family: "Montserrat Alternates";
 }
