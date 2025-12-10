@@ -23,6 +23,10 @@ const App = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
+    document.title = query ? `Search: ${query}` : "Gallery App";
+  }, [query]);
+
+  useEffect(() => {
     if (!query) return;
 
     getImages();
