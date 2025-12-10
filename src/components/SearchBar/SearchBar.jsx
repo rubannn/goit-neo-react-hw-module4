@@ -7,9 +7,9 @@ export default function SearchBar({ onSubmit }) {
     event.preventDefault();
     const query = event.target.elements.searchQuery.value.trim();
     if (query.length === 0)
-      return toast("Input cannot be empty", {
-        duration: 4000,
-        position: "top-center",
+      return toast.error("Input cannot be empty", {
+        duration: 2000,
+        position: "top-right",
       });
     onSubmit(query);
   };
