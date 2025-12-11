@@ -1,10 +1,10 @@
 import { Blocks } from "react-loader-spinner";
 import css from "./Loader.module.css";
 
-export default function Loader({ visible }) {
+const Loader = () => {
   return (
     <Blocks
-      visible={visible}
+      // visible={visible}
       height="40"
       width="40"
       color="#484444"
@@ -12,4 +12,6 @@ export default function Loader({ visible }) {
       wrapperClass={css.loader}
     />
   );
-}
+};
+
+export default Loader;

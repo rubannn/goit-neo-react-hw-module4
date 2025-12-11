@@ -80,11 +80,11 @@ const App = () => {
         isOpen={modalIsOpen}
         closeModal={closeModal}
       />
-      <div className={css.loadMoreWrapper}>
-        {totalPages > 0 && page < totalPages && (
+      <div className={css.controls}>
+        {isLoading && <Loader />}
+        {totalPages > 0 && page < totalPages && !isLoading && (
           <LoadMoreBtn onClick={handleLoadMore} />
         )}
-        <Loader visible={isLoading} />
       </div>
       <Toaster />
     </div>
